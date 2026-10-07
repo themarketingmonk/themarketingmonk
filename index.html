@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Apurv Sharma | Growth Marketing, SEO & Performance Ads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="ambient-glow glow-1"></div>
+<div class="ambient-glow glow-2"></div>
+<div class="ambient-glow glow-3"></div>
+
+<!-- Header Navigation -->
+<nav>
+  <a href="index.html" class="logo-container">
+    <div class="logo-icon">▲</div>
+    <span class="logo-text">Apurv Sharma</span>
+  </a>
+
+  <button class="burger-menu" id="burgerBtn">☰</button>
+  
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropdown-btn">Services ▾</button>
+      <div class="dropdown-menu">
+        <a href="seo.html">🔍 SEO, AEO & GEO</a>
+        <a href="ads.html">🎯 Performance Ads</a>
+        <a href="email.html">✉️ Email & CRM Automation</a>
+        <a href="analytics.html">📊 Analytics & Dashboards</a>
+        <a href="leads.html">🤝 B2B Lead Generation</a>
+        <a href="content.html">✍️ Content & Strategy</a>
+      </div>
+    </div>
+    <a href="about.html">About</a>
+    <button class="btn-primary" onclick="openContactModal()">Let's Talk ✨</button>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero-grid">
+    <div>
+      <div class="badge-pill">
+        <span style="width: 8px; height: 8px; background: var(--accent-emerald); border-radius: 50%;"></span>
+        Growth Marketer · Mumbai, India
+      </div>
+      <h1>Building Scalable <span class="gradient-text">Growth Systems</span> That Drive Revenue</h1>
+      <p style="font-size: 1.1rem; margin-top: 16px;">
+        6+ years connecting SEO, paid ads, analytics, and CRM automation across EdTech, SaaS, and enterprise accounts.
+      </p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="openContactModal()">Book a Free Consultation ✨</button>
+        <a href="seo.html" class="btn-glass">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glass-panel visual-card v1">
+        <div style="font-size: 0.85rem; color: var(--text-sub);">Organic Growth Impact</div>
+        <div style="font-size: 1.8rem; font-family: 'Hammersmith One'; color: var(--accent-cyan); margin-top: 4px;">+36% Visibility</div>
+        <div class="chart-bars">
+          <div class="chart-bar" style="height: 40%"></div>
+          <div class="chart-bar" style="height: 55%"></div>
+          <div class="chart-bar" style="height: 48%"></div>
+          <div class="chart-bar" style="height: 75%"></div>
+          <div class="chart-bar" style="height: 90%"></div>
+          <div class="chart-bar" style="height: 100%"></div>
+        </div>
+      </div>
+      <div class="glass-panel visual-card v2">
+        <div style="font-size: 0.85rem; color: var(--text-sub);">Performance Scale</div>
+        <div style="font-size: 1.6rem; font-family: 'Hammersmith One'; color: #fff;">4,000+ Leads</div>
+        <div style="font-size: 0.8rem; color: var(--accent-emerald);">Generated for IIT Roorkee</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Estimator Widget -->
+  <section>
+    <div class="glass-panel calc-box">
+      <h2>Interactive Growth Estimator</h2>
+      <p>Adjust parameters to estimate potential impact using data-backed baseline averages.</p>
+      <div class="calc-controls">
+        <div class="calc-control">
+          <label>Monthly Traffic / Reach: <span id="reachVal" style="color: var(--accent-cyan); font-weight: 600;">50,000</span></label>
+          <input type="range" id="reachInput" min="5000" max="200000" step="5000" value="50000" oninput="updateCalc()">
+        </div>
+        <div class="calc-control">
+          <label>Target Campaign Type:</label>
+          <select id="campaignType" onchange="updateCalc()" style="width: 100%; padding: 12px; border-radius: 12px; background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border-glass);">
+            <option value="email">Email Campaign (Avg Open Rate 34%)</option>
+            <option value="seo">SEO Search Boost (Impressions Optimization)</option>
+            <option value="leads">B2B Outreach Pipeline</option>
+          </select>
+        </div>
+      </div>
+      <div class="calc-results">
+        <div>
+          <div style="font-size: 0.85rem; color: var(--text-sub);">Estimated Monthly Conversions / Engagement</div>
+          <div id="estResult" style="font-size: 2rem; font-family: 'Hammersmith One'; color: var(--accent-emerald);">17,000 Opens</div>
+        </div>
+        <button class="btn-primary" onclick="openContactModal()">Get Custom Strategy</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Grid -->
+  <section>
+    <div class="stats-grid">
+      <div class="glass-panel stat-card">
+        <div class="stat-number">6+</div>
+        <p>Years Experience</p>
+      </div>
+      <div class="glass-panel stat-card">
+        <div class="stat-number">4,000+</div>
+        <p>IIT Roorkee Leads</p>
+      </div>
+      <div class="glass-panel stat-card">
+        <div class="stat-number">60,000+</div>
+        <p>Email Contacts Reached</p>
+      </div>
+      <div class="glass-panel stat-card">
+        <div class="stat-number">7</div>
+        <p>Industries Served</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Navigation Grid -->
+  <section>
+    <h2>Specialized Growth Services</h2>
+    <p>Select a service to explore full scope and direct metric evidence.</p>
+    <div class="grid-3">
+      <a class="glass-panel service-card" href="seo.html">
+        <div>
+          <div class="icon-wrapper">🔍</div>
+          <h3>SEO, AEO & GEO</h3>
+          <p style="margin-top: 8px;">Be found on Google and in AI search answers.</p>
+        </div>
+        <div style="margin-top: 24px; color: var(--accent-cyan); font-weight: 500;">View Solutions & Impact →</div>
+      </a>
+      <a class="glass-panel service-card" href="ads.html">
+        <div>
+          <div class="icon-wrapper">🎯</div>
+          <h3>Performance Marketing</h3>
+          <p style="margin-top: 8px;">Paid advertising focused on conversion, ROI, and high-value leads.</p>
+        </div>
+        <div style="margin-top: 24px; color: var(--accent-cyan); font-weight: 500;">View Solutions & Impact →</div>
+      </a>
+      <a class="glass-panel service-card" href="email.html">
+        <div>
+          <div class="icon-wrapper">✉️</div>
+          <h3>Email & CRM Automation</h3>
+          <p style="margin-top: 8px;">Nurture cold prospects into sales-ready opportunities.</p>
+        </div>
+        <div style="margin-top: 24px; color: var(--accent-cyan); font-weight: 500;">View Solutions & Impact →</div>
+      </a>
+      <a class="glass-panel service-card" href="analytics.html">
+        <div>
+          <div class="icon-wrapper">📊</div>
+          <h3>Analytics & Dashboards</h3>
+          <p style="margin-top: 8px;">Transform raw data into clear, actionable business strategies.</p>
+        </div>
+        <div style="margin-top: 24px; color: var(--accent-cyan); font-weight: 500;">View Solutions & Impact →</div>
+      </a>
+      <a class="glass-panel service-card" href="leads.html">
+        <div>
+          <div class="icon-wrapper">🤝</div>
+          <h3>B2B Lead Generation</h3>
+          <p style="margin-top: 8px;">Pipeline generation engineered for high-value B2B accounts.</p>
+        </div>
+        <div style="margin-top: 24px; color: var(--accent-cyan); font-weight: 500;">View Solutions & Impact →</div>
+      </a>
+      <a class="glass-panel service-card" href="content.html">
+        <div>
+          <div class="icon-wrapper">✍️</div>
+          <h3>Content & Strategy</h3>
+          <p style="margin-top: 8px;">Engaging content and marketing assets that boost visibility.</p>
+        </div>
+        <div style="margin-top: 24px; color: var(--accent-cyan); font-weight: 500;">View Solutions & Impact →</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Marquee Ticker -->
+  <section>
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <div class="industry-tag">✦ EdTech</div>
+        <div class="industry-tag">✦ Higher Education</div>
+        <div class="industry-tag">✦ SaaS</div>
+        <div class="industry-tag">✦ Real Estate</div>
+        <div class="industry-tag">✦ Mental Healthcare</div>
+        <div class="industry-tag">✦ Manufacturing</div>
+        <div class="industry-tag">✦ Marketing Services</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Track Record Timeline -->
+  <section>
+    <h2>Track Record & Impact</h2>
+    <div class="timeline" style="margin-top: 32px;">
+      <div class="timeline-item">
+        <div style="font-size: 0.85rem; color: var(--accent-cyan);">2026 – Present</div>
+        <h3>InSync Analytics Corp. — <span style="font-weight: 300; color: var(--text-sub);">SEO Executive</span></h3>
+        <p>Driving organic visibility, email outreach, and leading AI Engine Optimization (AEO/GEO).</p>
+      </div>
+      <div class="timeline-item">
+        <div style="font-size: 0.85rem; color: var(--accent-cyan);">2024 – 2026</div>
+        <h3>Hunarho Learning Solutions — <span style="font-weight: 300; color: var(--text-sub);">Digital Marketing Specialist</span></h3>
+        <p>Managed ad budgets of 200K and generated 4,000+ leads for IIT Roorkee programs.</p>
+      </div>
+      <div class="timeline-item">
+        <div style="font-size: 0.85rem; color: var(--accent-cyan);">2023 – 2024</div>
+        <h3>Apprisia Consulting — <span style="font-weight: 300; color: var(--text-sub);">Market Research Analyst</span></h3>
+        <p>Executed targeted SaaS research campaigns and identified client pain points.</p>
+      </div>
+      <div class="timeline-item">
+        <div style="font-size: 0.85rem; color: var(--accent-cyan);">2022 – 2023</div>
+        <h3>CandorWorks — <span style="font-weight: 300; color: var(--text-sub);">Business Development Executive</span></h3>
+        <p>Generated 50+ qualified enterprise leads/appointments monthly for Dell, IBM, and Datatrace.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <a href="index.html" class="logo-container" style="margin-bottom: 16px;">
+        <div class="logo-icon">▲</div>
+        <span class="logo-text">Apurv Sharma</span>
+      </a>
+      <p style="font-size: 0.88rem; margin-top: 10px;">
+        Data-driven growth marketing, performance advertising, SEO, and CRM automation engineered for revenue scale.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Sitemap</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About & Background</a></li>
+        <li><a href="javascript:void(0)" onclick="openContactModal()">Contact & Consultation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="seo.html">SEO, AEO & GEO</a></li>
+        <li><a href="ads.html">Performance Ads</a></li>
+        <li><a href="email.html">Email Automation</a></li>
+        <li><a href="analytics.html">Analytics & Dashboards</a></li>
+        <li><a href="leads.html">B2B Lead Generation</a></li>
+        <li><a href="content.html">Content Strategy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal & Policy</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Apurv Sharma. All Rights Reserved.</div>
+    <div>Mumbai, Maharashtra, India · <a href="tel:+918793496098" style="color: var(--accent-cyan); text-decoration: none;">+91 8793496098</a></div>
+  </div>
+</footer>
+
+<!-- Contact Modal -->
+<div class="modal-overlay" id="contactModal" onclick="if(event.target===this)closeContactModal()">
+  <div class="modal-card glass-panel">
+    <button class="modal-close" onclick="closeContactModal()">×</button>
+    <h2>Let's build a growth engine</h2>
+    <p style="margin-bottom: 24px;">Share your goals and requirements. I'll get back to you directly.</p>
+    <input id="formName" type="text" placeholder="Your Name">
+    <input id="formEmail" type="email" placeholder="Your Email Address">
+    <textarea id="formMessage" rows="4" placeholder="Tell me about your business goals or target metrics..."></textarea>
+    <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="handleFormSend()">Send Message 🚀</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

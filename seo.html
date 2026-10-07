@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEO, AEO & GEO Optimization | Apurv Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="ambient-glow glow-1"></div>
+<div class="ambient-glow glow-2"></div>
+
+<nav>
+  <a href="index.html" class="logo-container">
+    <div class="logo-icon">▲</div>
+    <span class="logo-text">Apurv Sharma</span>
+  </a>
+  <button class="burger-menu" id="burgerBtn">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropdown-btn">Services ▾</button>
+      <div class="dropdown-menu">
+        <a href="seo.html">🔍 SEO, AEO & GEO</a>
+        <a href="ads.html">🎯 Performance Ads</a>
+        <a href="email.html">✉️ Email & CRM Automation</a>
+        <a href="analytics.html">📊 Analytics & Dashboards</a>
+        <a href="leads.html">🤝 B2B Lead Generation</a>
+        <a href="content.html">✍️ Content & Strategy</a>
+      </div>
+    </div>
+    <a href="about.html">About</a>
+    <button class="btn-primary" onclick="openContactModal()">Let's Talk ✨</button>
+  </div>
+</nav>
+
+<main>
+  <section style="padding-top: 40px;">
+    <a href="index.html" style="color: var(--accent-cyan); text-decoration: none; display: inline-block; margin-bottom: 20px;">← Back to Home</a>
+    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 12px;">
+      <div class="icon-wrapper" style="margin-bottom: 0;">🔍</div>
+      <h1>SEO, AEO & GEO Optimization</h1>
+    </div>
+    <p style="font-size: 1.2rem; max-width: 800px; margin-bottom: 24px;">
+      Technical, on-page, and off-page SEO optimization combined with cutting-edge Generative Engine Optimization (GEO) & Answer Engine Optimization (AEO).
+    </p>
+
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px;">
+      <span class="badge-pill">GA4</span>
+      <span class="badge-pill">MS Clarity</span>
+      <span class="badge-pill">Backlink Audits</span>
+      <span class="badge-pill">LLMs.txt</span>
+    </div>
+    
+    <div class="stats-grid" style="margin-bottom: 40px;">
+      <div class="glass-panel stat-card">
+        <div class="stat-number">11K→15K</div>
+        <p>Organic Impressions (3 mos)</p>
+      </div>
+      <div class="glass-panel stat-card">
+        <div class="stat-number">31%→1%</div>
+        <p>Spam Score Reduction</p>
+      </div>
+      <div class="glass-panel stat-card">
+        <div class="stat-number">11→14</div>
+        <p>Domain Authority Increase</p>
+      </div>
+    </div>
+
+    <div class="glass-panel" style="padding: 36px; margin-bottom: 40px;">
+      <h2>Key Deliverables & Execution Scope</h2>
+      <ul class="check-list">
+        <li>Technical SEO audits: crawlability, indexing, site architecture, and speed optimization</li>
+        <li>On-page SEO, metadata enhancements, and search-focused content strategies</li>
+        <li>Backlink audits and targeted off-page link building campaigns</li>
+        <li>AEO and GEO optimization, including LLMs.txt integration for AI crawlers</li>
+        <li>CRO and UX recommendations derived from user behavior analytics</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-col">
+      <a href="index.html" class="logo-container" style="margin-bottom: 16px;">
+        <div class="logo-icon">▲</div>
+        <span class="logo-text">Apurv Sharma</span>
+      </a>
+      <p style="font-size: 0.88rem; margin-top: 10px;">Data-driven growth marketing and SEO engineered for scale.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Sitemap</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="seo.html">SEO, AEO & GEO</a></li>
+        <li><a href="ads.html">Performance Ads</a></li>
+        <li><a href="email.html">Email Automation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Apurv Sharma. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="contactModal" onclick="if(event.target===this)closeContactModal()">
+  <div class="modal-card glass-panel">
+    <button class="modal-close" onclick="closeContactModal()">×</button>
+    <h2>Let's build a growth engine</h2>
+    <input id="formName" type="text" placeholder="Your Name">
+    <input id="formEmail" type="email" placeholder="Your Email Address">
+    <textarea id="formMessage" rows="4" placeholder="Tell me about your goals..."></textarea>
+    <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="handleFormSend()">Send Message 🚀</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+my-portfolio/
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
+├── index.html
+├── about.html
+├── seo.html
+├── ads.html
+├── email.html
+├── analytics.html
+├── leads.html
+├── content.html
+├── privacy.html
+└── terms.html
